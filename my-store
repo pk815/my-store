@@ -1,1 +1,173 @@
-index.html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SecretBazaar</title>
+  <style>
+    body{
+      font-family: Arial;
+      background:#f0f0f5;
+      margin:0;
+    }
+
+    header{
+      background: linear-gradient(90deg, #ff4e50, #f9d423);
+      color:white;
+      padding:25px 10px;
+      text-align:center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    header h1{
+      font-size: 2.2em;
+      margin:0;
+    }
+
+    header p{
+      font-size: 1em;
+      margin-top:5px;
+    }
+
+    .products{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:25px;
+      padding:25px;
+    }
+
+    .card{
+      background:white;
+      padding:15px;
+      border-radius:15px;
+      text-align:center;
+      box-shadow:0 4px 12px rgba(0,0,0,0.15);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover{
+      transform: translateY(-8px);
+      box-shadow:0 8px 20px rgba(0,0,0,0.25);
+    }
+
+    img{
+      width:100%;
+      border-radius:10px;
+      height:200px;
+      object-fit:cover;
+      margin-bottom:10px;
+    }
+
+    h3{
+      margin:10px 0 5px 0;
+      color:#333;
+    }
+
+    p{
+      color:#555;
+      font-weight:bold;
+      margin-bottom:10px;
+    }
+
+    button{
+      background:#ff4e50;
+      color:white;
+      border:none;
+      padding:12px;
+      width:100%;
+      border-radius:8px;
+      font-size:16px;
+      cursor:pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover{
+      background:#f9d423;
+      color:#333;
+    }
+
+    footer{
+      background:black;
+      color:white;
+      text-align:center;
+      padding:15px;
+      margin-top:25px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>SecretBazaar</h1>
+  <p>Your hidden marketplace for unique finds</p>
+</header>
+
+<div class="products">
+
+  <!-- Product 1 -->
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1598300053316-ff1d0e17e1d7?auto=format&fit=crop&w=300&q=80" />
+    <h3>Wireless Headphones</h3>
+    <p>₹1999</p>
+    <a href="https://wa.me/919876543210?text=I want to buy Wireless Headphones">
+      <button>Order on WhatsApp</button>
+    </a>
+  </div>
+
+  <!-- Product 2 -->
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1589395595558-6f1fba62d3ef?auto=format&fit=crop&w=300&q=80" />
+    <h3>Smart Watch</h3>
+    <p>₹2999</p>
+    <a href="https://wa.me/919876543210?text=I want to buy Smart Watch">
+      <button>Order on WhatsApp</button>
+    </a>
+  </div>
+
+  <!-- Product 3 -->
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1598300053192-2e1cfe7f6a3c?auto=format&fit=crop&w=300&q=80" />
+    <h3>Bluetooth Speaker</h3>
+    <p>₹1499</p>
+    <a href="https://wa.me/919876543210?text=I want to buy Bluetooth Speaker">
+      <button>Order on WhatsApp</button>
+    </a>
+  </div>
+
+  <!-- Product 4 -->
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1592503250860-5a9b4c7e6c4d?auto=format&fit=crop&w=300&q=80" />
+    <h3>Gaming Mouse</h3>
+    <p>₹999</p>
+    <a href="https://wa.me/919876543210?text=I want to buy Gaming Mouse">
+      <button>Order on WhatsApp</button>
+    </a>
+  </div>
+
+  <!-- Product 5 -->
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1594007653262-5f1de5eb6f8d?auto=format&fit=crop&w=300&q=80" />
+    <h3>LED Desk Lamp</h3>
+    <p>₹799</p>
+    <a href="https://wa.me/919876543210?text=I want to buy LED Desk Lamp">
+      <button>Order on WhatsApp</button>
+    </a>
+  </div>
+
+  <!-- Product 6 -->
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1580584124098-2a2fef3f9f7e?auto=format&fit=crop&w=300&q=80" />
+    <h3>Portable Power Bank</h3>
+    <p>₹1299</p>
+    <a href="https://wa.me/919876543210?text=I want to buy Portable Power Bank">
+      <button>Order on WhatsApp</button>
+    </a>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 SecretBazaar. All rights reserved.
+</footer>
+
+</body>
+</html>
