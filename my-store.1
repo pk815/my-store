@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Online Store</title>
+
+  <style>
+    body{
+      font-family: Arial;
+      background:#f2f2f2;
+      margin:0;
+    }
+
+    header{
+      background:black;
+      color:white;
+      padding:15px;
+      text-align:center;
+    }
+
+    .products{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+      padding:20px;
+    }
+
+    .card{
+      background:white;
+      padding:15px;
+      border-radius:10px;
+      text-align:center;
+      box-shadow:0 0 5px gray;
+    }
+
+    img{
+      width:100%;
+      border-radius:10px;
+      height:200px;
+      object-fit:cover;
+    }
+
+    button{
+      background:black;
+      color:white;
+      border:none;
+      padding:10px;
+      width:100%;
+      border-radius:5px;
+      font-size:16px;
+      cursor:pointer;
+    }
+
+    button:hover{
+      background:#333;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>My Online Store</h1>
+  <p>Best Products at Best Price</p>
+</header>
+
+<div class="products">
+
+  <!-- Product 1 -->
+  <div class="card">
+    <img src="https://via.placeholder.com/300" />
+    <h3>Wireless Headphones</h3>
+    <p>₹1999</p>
+    <a href="https://wa.me/91XXXXXXXXXX?text=I want to buy Wireless Headphones">
+      <button>Order on WhatsApp</button>
+    </a>
+  </div>
+
+  <!-- Product 2 -->
+  <div class="card">
+    <img src="https://via.placeholder.com/300" />
+    <h3>Smart Watch</h3>
+    <p>₹2999</p>
+    <a href="https://wa.me/91XXXXXXXXXX?text=I want to buy Smart Watch">
+      <button>Order on WhatsApp</button>
+    </a>
+  </div>
+
+  <!-- Product 3 -->
+  <div class="card">
+    <img src="https://via.placeholder.com/300" />
+    <h3>Bluetooth Speaker</h3>
+    <p>₹1499</p>
+    <a href="https://wa.me/91XXXXXXXXXX?text=I want to buy Bluetooth Speaker">
+      <button>Order on WhatsApp</button>
+    </a>
+  </div>
+
+</div>
+
+</body>
+</html>
